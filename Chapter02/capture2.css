@@ -1,0 +1,167 @@
+/* 기본 스타일: 데스크탑 화면용 */
+* { 
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+}
+
+header { 
+    background: #d4ff0050; 
+    height: 130px; 
+}
+
+header img { 
+    float: left; 
+    width: 200px; 
+    margin: 15px; 
+}
+
+nav { 
+    float: left; 
+    position: relative; 
+    top: 20px; 
+    background: #62ff0050; 
+}
+
+nav > ul > li { 
+    float: left; 
+    width: 100px; 
+}
+
+main { 
+    background: #bab5ff; 
+    width: 100%; 
+}
+
+main > section { 
+    background: hsla(97, 100%, 57%, 0.5); 
+    height: 430px; 
+    width: 1024px; 
+    margin: 0 auto; 
+}
+
+main > section > article { 
+    background: #e78ad1; 
+    width: 31%; 
+    height: 175px; 
+    float: left; 
+    margin: 20px 0 0 20px; 
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main > section > article:hover { 
+    transform: scale(1.1) rotate(5deg); 
+}
+
+main > section > article > img { 
+    width: 90px; 
+    margin: 10px; 
+    float: left;
+}
+
+footer { 
+    background: #70707050; 
+    height: 80px; 
+}
+
+.visual { 
+    width: 1024px; 
+    height: 300px; 
+    overflow: hidden; 
+}
+
+.visual > img { 
+    width: 100%; 
+    position: relative; 
+    top: -90px; 
+}
+
+/* 모바일 화면용: iPhone 12 Pro (1170px 이하) */
+@media screen and (max-width: 1170px) {
+    header { 
+        height: 100px; 
+        text-align: center; /* 헤더 가운데 정렬 */
+    }
+
+    header img { 
+        width: 150px; 
+        margin: 10px auto; 
+        display: block; /* 이미지 가운데 정렬 */
+        float: none;
+    }
+
+    nav { 
+        float: none; 
+        position: static; 
+        margin-top: 10px; 
+        text-align: center; 
+    }
+
+    nav > ul { 
+        padding: 0;
+        display: inline-block; /* 메뉴 가운데 정렬 */
+    }
+
+    nav > ul > li { 
+        display: inline-block; 
+        width: auto; 
+        padding: 10px;
+    }
+
+    main { 
+        background: #bab5ff; 
+        width: 100%; 
+    }
+
+    main > section { 
+        background: hsla(97, 100%, 57%, 0.5); 
+        height: auto; 
+        width: 90%; 
+        margin: 20px auto; 
+        padding: 10px; 
+    }
+
+    main > section > article { 
+        background: #e78ad1; 
+        width: 100%; 
+        height: auto; 
+        margin: 10px 0; 
+        float: none; /* 세로 배치 */
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    main > section > article:hover { 
+        transform: scale(1.05); /* 살짝 확대 효과 */
+        rotate: none; /* 회전 효과 제거 */
+    }
+
+    main > section > article > img { 
+        width: 60px; 
+        margin: 10px; 
+        float: left;
+    }
+
+    footer { 
+        background: #70707050; 
+        height: 60px; 
+        text-align: center; 
+        line-height: 60px; 
+    }
+
+    .visual { 
+        width: 90%; 
+        height: auto; 
+        margin: 0 auto; 
+        overflow: hidden; 
+    }
+
+    .visual > img { 
+        width: 100%; 
+        position: relative; 
+        top: 0; /* 이미지 위치 조정 */
+    }
+}
