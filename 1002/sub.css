@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Dotum;
+}
+header {
+    background-color: blue;
+    height: 120px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+#util {
+    background-color: bisque;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    color: aqua;
+}
+#search_bar {
+    position: relative;
+    top: 30px;
+    width: 300px;
+    margin: 0 auto;
+}
+#search_bar > input[type=text] {
+    height: 50px;
+    font-size: 1.5em;
+}
+#search_bar > input[type=submit] {
+    height: 50px;
+}
+main {
+    background-color: brown;
+    position: relative;
+    float: left;
+    width: 70%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+}
+#content {
+    text-align: left;
+}
+#sub_title {
+    position:absolute;
+    top:5px;
+    left:5px;
+    font-size: 1.25em;
+}
+#menu_history {
+    position: absolute;
+    top: 15px;
+    right:5px;
+    font-size: 1em;
+}
+#content {
+    position: relative;
+    font-size: 0.75em;
+    top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+aside {
+    background-color: aqua;
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 400px;
+    text-align: center;
+}
+#sec1 {
+    background-color: chartreuse;
+    height: 100px;
+}
