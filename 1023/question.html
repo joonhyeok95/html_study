@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        .box { position: relative; margin: 10px;
+                border-radius: 30px; border: 1px solid; text-align: center;}
+        h1, h2 { text-align: center;}
+        .txt { width: 70%; height: 30px; 
+            display: block; 
+            padding-left: 20px; padding-right: 20px; margin: 2px auto;}
+    </style>
+</head>
+<body>
+<h1>MBTI Quiz</h1>
+<form action="result.html" method="get" onsubmit="q4_check()" id="frm1">
+<div class="box">
+    <h2>1. 에너지 방향</h2>
+    <span class="txt">
+        <input type="radio" value="I" name="q1" />
+        1. 내향형
+    </span>
+    <span class="txt">
+        <input type="radio" value="E" name="q1" />
+        2. 외향형
+    </span>
+</div>
+
+<div class="box">
+    <h2>2. 인식 방식</h2>
+    <span class="txt">
+        <input type="radio" value="S" name="q2" />
+        1. 감각형
+    </span>
+    <span class="txt">
+        <input type="radio" value="N" name="q2" />
+        2. 직관형
+    </span>
+</div>
+<div class="box">
+    <h2>3. 판단방식</h2>
+    <span class="txt">
+        <input type="radio" value="T" name="q3" />
+        1. 사고형
+    </span>
+    <span class="txt">
+        <input type="radio" value="F" name="q3" />
+        2. 감정형
+    </span>
+</div>
+<div class="box">
+    <h2>4. 생활 양식</h2>
+    <span class="txt">
+        <input type="radio" value="J" name="q4" />
+        1. 판단형
+    </span>
+    <span class="txt">
+        <input type="radio" value="P" name="q4" />
+        2. 인식형
+    </span>
+</div>
+<div class="box">
+    <input type="submit" value="완료" />
+</div>
+
+
+</form>
+
+</body>
+</html>
